@@ -109,6 +109,17 @@
 				}
 			}
 		],
+		"parameters": {
+			"folders": {
+				"type": "array",
+				"defaultValue": [
+					"DimArist_cdc",
+					"DimDate_cdc",
+					"DimTrack_cdc",
+					"DimUser_cdc"
+				]
+			}
+		},
 		"annotations": []
 	}
 }
