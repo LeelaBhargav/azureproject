@@ -1,0 +1,23 @@
+{
+	"name": "AzureSqlds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlls",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"container": {
+				"type": "string"
+			},
+			"folder": {
+				"type": "string"
+			},
+			"file": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
