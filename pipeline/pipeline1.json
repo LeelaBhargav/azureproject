@@ -45,7 +45,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "[\"DimArist_cdc\",\"DimDate_cdc\",\"DimTrack_cdc\",\"DimUser_cdc\"]",
+						"value": "[\n  \"DimArist_cdc\",\n  \"DimDate_cdc\",\n  \"DimTrack_cdc\",\n  \"DimUser_cdc\"\n]",
 						"type": "Expression"
 					},
 					"activities": [
@@ -67,6 +67,8 @@
 									"storeSettings": {
 										"type": "AzureBlobFSReadSettings",
 										"recursive": false,
+										"wildcardFolderPath": "cdc",
+										"wildcardFileName": "*",
 										"enablePartitionDiscovery": false
 									},
 									"formatSettings": {
@@ -93,7 +95,13 @@
 							"outputs": [
 								{
 									"referenceName": "Jsonsinkfolder",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"folder": {
+											"value": "@item()",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
