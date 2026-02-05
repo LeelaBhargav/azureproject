@@ -1,0 +1,17 @@
+{
+	"name": "AzureSqlls",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "leelserver.database.windows.net",
+			"database": "leeldb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "adfprojects",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEZGODBBNjdCLTBDREUtNDM5OC1COEUxLTM4NDUwQkY3NUNCRV9mZDI4ZTVjNi0xOTk0LTQxYWMtYjVhMy1hYmM1N2QxNWMyZGIiDQp9"
+		}
+	}
+}

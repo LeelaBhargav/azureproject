@@ -1,0 +1,19 @@
+{
+	"name": "Jsonfilesink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "datalakels",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "DimDate_cdc",
+				"fileSystem": "bronze"
+			}
+		},
+		"schema": {}
+	}
+}
